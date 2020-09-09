@@ -9,17 +9,25 @@
   <url>http://maven.apache.org</url>
 
 <repositories>
-<repository>
-  <id>skinno-devops</id>
-  <url>https://pkgs.dev.azure.com/skinno-devops/_packaging/skinno-devops/maven/v1</url>
-  <releases>
-    <enabled>true</enabled>
-  </releases>
-  <snapshots>
-    <enabled>true</enabled>
-  </snapshots>
-</repository>
+  <repository>
+    <id>skinno-devops</id>
+    <url>https://pkgs.dev.azure.com/skinno-devops/_packaging/skinno-devops/maven/v1</url>
+    <releases>
+      <enabled>true</enabled>
+    </releases>
+    <snapshots>
+      <enabled>true</enabled>
+    </snapshots>
+  </repository>
 </repositories>
+
+<pluginRepositories>
+    <pluginRepository>
+	<id>skinno-devops</id>
+	<url>https://pkgs.dev.azure.com/skinno-devops/_packaging/skinno-devops/maven/v1</url>
+        <releases><enabled>false</enabled></releases>
+    </pluginRepository>
+</pluginRepositories>
 	
   <dependencies>
     <dependency>

@@ -17,7 +17,9 @@ steps:
     jdkSourceOption: 'LocalDirectory'
     jdkFile: '/home/devadmin/jdk/openjdk-11+28_linux-x64_bin.tar.gz'
     jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk11'
-    cleanDestinationDirectory: true
+    cleanDestinationDirectory: true  
+  env:
+    JAVA_HOME__x64=$JAVA_HOME
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'

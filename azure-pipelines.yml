@@ -18,15 +18,16 @@ steps:
     jdkFile: '/home/devadmin/jdk/openjdk-11+28_linux-x64_bin.tar.gz'
     jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk11'
     cleanDestinationDirectory: true  
-  env:
-    JAVA_HOME__x64=$JAVA_HOME
+
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '11'
-#    jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.11'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false

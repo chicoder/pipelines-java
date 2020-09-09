@@ -8,6 +8,7 @@
   <name>Hello world sample web app</name>
   <url>http://maven.apache.org</url>
 
+<repositories>
 <repository>
   <id>skinno-devops</id>
   <url>https://pkgs.dev.azure.com/skinno-devops/_packaging/skinno-devops/maven/v1</url>
@@ -18,6 +19,7 @@
     <enabled>true</enabled>
   </snapshots>
 </repository>
+</repositories>
 	
   <dependencies>
     <dependency>

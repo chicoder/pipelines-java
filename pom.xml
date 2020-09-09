@@ -25,7 +25,7 @@
     <pluginRepository>
 	<id>skinno-devops</id>
 	<url>https://pkgs.dev.azure.com/skinno-devops/_packaging/skinno-devops/maven/v1</url>
-        <releases><enabled>false</enabled></releases>
+        <releases><enabled>true</enabled></releases>
     </pluginRepository>
 </pluginRepositories>
 	
